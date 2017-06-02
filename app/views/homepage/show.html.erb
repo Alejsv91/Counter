@@ -1,0 +1,29 @@
+<h1>Homepage#show</h1>
+<p>Find me in app/views/homepage/show.html.erb</p>
+
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+ <body>
+		<div id="divForm" class="center welcomeForm">
+			<label class="thingsForm" for="urlVideo">Url para audio:</label>
+		</br>
+			<input class="thingsForm" type="text" id="urlVideo" name="urlVideo" placeholder="url del video de youTube">
+			<br>
+			<button class="thingsForm" type="button" id="videoForm" type="submit" value="Iniciar">Iniciar</button>
+		</div>
+		<div id="songAndCounter"></div>
+		<div id="timer" class="center" color="white" style="display: none;"><span id="spanTimer"></span></div>
+		</div>
+		<video  id="bgvid" playsinline autoplay muted loop>
+		  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+		<source src="videoplayback.mp4" type="video/mp4">
+		</video>
+ <script type="text/javascript">
+			$(document).ready(function(){
+				var parameters = {};
+				var timer = new Timer(); 
+				timer.init();
+
+			});
+ </script>
+ <script src = "https://www.youtube.com/iframe_api"></script>     
+
